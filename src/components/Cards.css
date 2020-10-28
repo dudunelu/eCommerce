@@ -1,0 +1,123 @@
+.wholePage{
+    justify-content: center;
+    width: 100px;
+    min-width: 80px;
+    margin-right: auto;
+    margin-left: 9.5%;
+}
+.row{
+    display: flex;
+    justify-content: right;
+}
+.hello{
+   display: none;
+}
+.card{
+    margin-left: 40%;
+     
+}
+.card-img{
+    margin-bottom: 35px;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 250px;
+}
+
+.card-img:hover{
+    transform: scale(1.02);
+    transition: 0.3s all ease-out;
+    cursor: pointer;
+}
+.container-justify-center{
+    justify-content: center;
+    width: 120%;
+}
+.card-body{
+    background-color: rgb(211, 211, 211);
+    color: black;
+    border-radius: 5px;
+    width: 250px;
+    height: 150px;
+}
+.card-text{
+    margin-bottom: 120px;
+}
+
+
+/*SECOND NAVBAR*/
+.secondNav{
+    align-items: center;
+    margin-top: -0.5%;
+    height: 75%;
+    position: fixed;
+    display: column;
+    background-color:rgb(248, 248, 248);
+    margin-left: -7%;
+    margin-right: auto;
+    color: white;
+   
+}
+.secondNav li a{
+    text-decoration: none;
+}
+.linkSecondNav{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 20%;
+    height: 150px;
+
+}
+
+ 
+ 
+
+
+
+
+@media screen and (max-width:1400px){
+    .wholePage{
+        justify-content: center;
+    }
+    
+    .card-body{
+        width: 175px;
+        height: 115px;
+    }
+    .card-img{
+        width: 175px;
+        height: 200px;
+    }
+}
+
+
+@media screen and (max-width:960px){
+    
+    .wholePage{
+        justify-content: center;
+        width: 10px;
+        height: 100px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .row{
+        margin-left: -70%;
+        display: block;
+        justify-content: center;
+        width: 50%;
+    }
+    .card-body{
+        margin-left: auto;
+        margin-top: -15px;
+        margin-bottom: 50px;
+        width: 200px;
+        height: 100px;
+    }
+    .card-img{
+        justify-content: center;
+        width: 200px;
+        height: 20%;
+        margin-left: auto;
+        margin-bottom: 10%;
+    }
+}

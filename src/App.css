@@ -1,0 +1,148 @@
+.landingPage{
+  display: flex;
+  justify-content: center;
+}
+
+.LinkMenClothes{
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 30%;
+  height: 10%;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: rgb(22, 21, 21);
+  padding: 10px 10px;
+  z-index: 0;
+  border: solid white;
+  border-radius: 2px;
+  border-color: gray;
+}
+
+.LinkMenClothes:hover{
+   font-size: 38px;
+   transition: 0.3s all ease-out;
+   background-color: rgb(235, 235, 235);
+   color: black;
+}
+
+.LinkWomenClothes{
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 30%;
+  border-width: 20px; 
+  text-decoration: none;
+  background-color: rgb(22, 21, 21);
+  padding: 10px 10px;
+  border: solid white;
+  border-radius: 2px;
+  border-color: gray;
+
+}
+
+.LinkWomenClothes:hover{
+  font-size: 38px;
+  transition: 0.3s all ease-out;
+  background-color: rgb(235, 235, 235);
+  color: black;
+}
+.browseTitle{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-size: 40px;
+}
+
+.manImg{
+ 
+  width: 600px;
+  border-radius: 10px;
+}
+ 
+.womanImg{ 
+  width: 600px;
+  border-radius: 10px;
+}
+ 
+ 
+@media screen and (max-width:1400px){
+   
+  .landingPage{
+    margin-top: 20%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+  }
+  .womanImg{
+    z-index:-1;
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 80px;
+  }
+  .manImg{
+    margin-left: 15%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    width: 70%;
+  }
+  .LinkMenClothes{
+    margin-top: 15%;
+    z-index:0;
+    width: 45%;
+    margin-bottom:-65%;
+    margin-left: 28%;
+  }
+  .LinkMenClothes:hover{
+    font-size: 180%;
+    transition: 0.3s all ease-in-out;
+    background-color: rgb(235, 235, 235);
+    color: black;
+  }
+  .LinkWomenClothes{
+    margin-top: 8%;
+    z-index:0;
+    width: 45%;
+    margin-bottom:-45%;
+    margin-left: 28%;
+    
+  }
+  .LinkWomenClothes:hover{
+    font-size: 170%;
+    transition: 0.3s all ease-in-out;
+    background-color: rgb(235, 235, 235);
+    color: black;
+  }
+  
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
