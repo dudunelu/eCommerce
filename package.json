@@ -1,6 +1,6 @@
 {
   "homepage": "http://dudunelu.github.io/eCommerce",
-  "name": "ecommerce",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
