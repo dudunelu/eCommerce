@@ -24,10 +24,29 @@ import burgerImg from '../images/burger.png'
 
     
 
+     
+
+
     {/*com*/}
     {/*com*/}
     {/*com*/}
 
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
 
     {/* TOOGLE SIDEBAR*/}
     const MyContext = React.createContext();
@@ -65,7 +84,16 @@ import burgerImg from '../images/burger.png'
           onStateChange={(state) => ctx.stateChangeHandler(state)}
         > 
           <a className="menuItem" href="/social">Social</a>
-          <a className="menuItem" href="/aboutUs">About Us</a>
+          <a className="menuItem" href="/aboutUs"> 
+               <li class="dropdown">
+                 <a href="javascript:void(0)" className="dropbtn">About us</a>
+                   <div class="dropdown-content">
+                     <a href="#">Link 1</a>
+                     <a href="#">Link 2</a>
+                     <a href="#">Link 3</a>
+                   </div>
+               </li>
+          </a>
           <a className="menuItem" href="/contact">Contact</a>
           <a className="menuItem" href="/social">Social</a>
         </Menu>
@@ -91,9 +119,11 @@ import burgerImg from '../images/burger.png'
   
         <div className="navLinks">  
           <ul className={click ? "navUlActive" : "navUl"} >
-            <li className="navItem"><Link to="/work" onClick={closeMobileMenu}>Work</Link></li>
-            <li className="navItem"><Link to="/social" onClick={closeMobileMenu}>Social</Link></li>
-            <li className="navItem"><Link to="/signin" onClick={closeMobileMenu}>Profile</Link></li>
+             
+        
+            <li className="navItem"><Link to="/signin" onClick={closeMobileMenu}>For Her</Link></li>
+            <li className="navItem"><Link to="/signin" onClick={closeMobileMenu}>For Him</Link></li>
+            <li className="navItem"><Link to="/signin" onClick={closeMobileMenu}>For Kids</Link></li>
           </ul>
         </div>
         <div className="navLogoLeft">

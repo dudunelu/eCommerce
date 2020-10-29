@@ -42,12 +42,7 @@
     color: rgb(0, 0, 0);
 }
    
-.scrolled{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: lightblue;
-}
+ 
 .navLogoLeft{
     display: flex;
     margin-right: 8%;
@@ -66,33 +61,28 @@
     transition: 0.2s all ease-out;
 }
 .navUl{
+    margin-left: 26px;
     margin-right: 50px;
-    height: 20%;
+     
     display: flex;
     margin-right: 20;
     padding: 0;
     list-style-type: none;
-    overflow: hidden;
+    
     
 }
 .navItem{
-    margin-top: 80px;
+    font-size: 25px;
+    margin-top: 90px;
     height: 70px;
-    float: right;
-    display: inline;
-    justify-content: space-evenly;
+    font-size: large;
 }
 
 .navUl li a{
-    margin-left: auto;
+    margin-top: 20px;
     margin-left: -5px;
-    margin-top: -65px;
-    display: flex;
     text-decoration: none;
-    list-style: none;
-    font-size: 35px;
     color: rgb(0, 0, 0);
-    justify-content: space-around;
     padding: 2.5rem;
 }
 .menu-icon {
@@ -171,6 +161,8 @@
 .burgerImg{
     width: 20px;
 }
+
+
 /*SIDE BAR*/
  
 .bm-burger-button{
@@ -193,14 +185,17 @@
 }
   /* Position and sizing of clickable cross button */
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 550px;
+    width: 110px;
+    outline: none;
+
   }
   
   /* Color/shape of close button cross */
   .bm-cross {
     background: #000000;
-    
+   
+     
   }
   
   /*
@@ -235,9 +230,77 @@
   /* Individual item */
   .bm-item {
     display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 170%;
+    margin-bottom: 35%;
+    outline:none;
+  }
+  .bm-item:hover{
+    color: rgb(206, 93, 0);
+    padding: 15px 15px;
+    transition: 0.5s all ease-out;
+     
   }
   
   /* Styling of overlay */
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+  }
+
+
+  
+
+
+
+
+
+
+li a, .dropbtn {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 200%;
+    
+    
+    
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    font-size: 76%;
+    padding: 20px 22px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {background-color: #ff6924;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    margin-top: -20px;
+  }
+
+
+  .dropbtn{
+      font-size: 105%;
+      margin-left: -10%;
   }
